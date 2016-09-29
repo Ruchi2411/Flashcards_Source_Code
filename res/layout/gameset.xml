@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:id="@+id/screen" android:weightSum="1" android:padding="10dip"
+	android:background="#ffffff">
+	
+	<LinearLayout android:id="@+id/tabbar" android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:orientation="horizontal">
+	<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">			
+				<ImageView android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="3dip"
+				android:background="@drawable/icon" android:gravity="left" />
+	</LinearLayout>
+	
+	<RelativeLayout  android:layout_gravity="left|right" android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="center_vertical|right|top">
+					<ImageButton android:id="@+id/helpbutton" android:layout_width="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_height="wrap_content" android:background="@drawable/help" android:clickable="true" android:focusable="true"></ImageButton>
+					<ImageButton android:id="@+id/soundbutton" android:layout_width="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_height="wrap_content" android:background="@drawable/audio_on" android:layout_toRightOf="@+id/helpbutton" android:clickable="true" android:focusable="true"></ImageButton>
+					<ImageButton android:id="@+id/homebutton" android:layout_width="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_height="wrap_content" android:background="@drawable/home" android:layout_toRightOf="@+id/soundbutton" android:clickable="true" android:focusable="true"></ImageButton>
+				</RelativeLayout>
+				
+	</LinearLayout>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_below="@+id/tabbar"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:gravity="center_vertical">
+  <LinearLayout android:orientation="horizontal"
+  				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal" 
+				android:gravity="center_horizontal" 
+				android:layout_width="wrap_content"
+				android:padding="10dp" 
+				>
+  		<ImageButton android:layout_width="wrap_content"
+				     android:layout_height="wrap_content" 
+				     android:background="@drawable/a_e"
+				     android:layout_gravity="center" 
+				     android:id="@+id/set1"
+				     android:clickable="true" 
+				     android:focusable="true" 
+				     android:layout_margin="20dp">
+		</ImageButton>
+		<ImageButton android:layout_width="wrap_content"
+				     android:layout_height="wrap_content" 
+				     android:background="@drawable/f_j"
+				     android:layout_gravity="center" 
+				     android:id="@+id/set2"
+				      android:clickable="true" 
+				      android:focusable="true" 
+				      android:layout_margin="20dp"
+				     >
+		</ImageButton>
+		
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal"
+  				android:layout_width="fill_parent" 
+  				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal" 
+				android:gravity="center_horizontal" 
+				android:padding="10dp">
+		
+		<ImageButton android:layout_width="wrap_content"
+				     android:layout_height="wrap_content" 
+				     android:background="@drawable/k_o"
+				     android:layout_gravity="center" 
+				     android:id="@+id/set3"
+				     android:clickable="true" 
+				     android:focusable="true" 
+				     android:layout_margin="20dp">
+		</ImageButton>
+		<ImageButton android:layout_width="wrap_content"
+				     android:layout_height="wrap_content" 
+				     android:background="@drawable/p_t"
+				     android:layout_gravity="center" 
+				     android:id="@+id/set4"
+				     android:clickable="true" 
+				     android:focusable="true" 
+				     android:layout_margin="20dp">
+		</ImageButton>
+		
+    </LinearLayout>
+    <ImageButton android:layout_width="wrap_content"
+				     android:layout_height="wrap_content" 
+				     android:background="@drawable/u_z"
+				     android:layout_gravity="center" 
+				     android:id="@+id/set5"
+				     android:clickable="true" android:focusable="true" android:layout_margin="20dp">
+		</ImageButton>
+</LinearLayout>
+</RelativeLayout>

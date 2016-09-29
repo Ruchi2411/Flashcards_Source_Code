@@ -1,0 +1,137 @@
+<!--  <?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/bg">
+
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="40dp"
+		android:id="@+id/table">
+
+		<TableRow>
+			<ImageView android:layout_column="1" android:padding="3dip"
+				android:background="@drawable/icon" android:gravity="left" />
+			<ImageButton android:gravity="right" android:padding="3dip"
+				android:background="@drawable/help_main" android:id="@+id/helpbutton" />
+			<ImageButton android:gravity="right" android:padding="3dip"
+				android:background="@drawable/info_main" android:id="@+id/infobutton" />
+			<ImageButton android:background="@drawable/audio_on_main"
+				android:padding="3dip" android:id="@+id/soundbutton"></ImageButton>
+		</TableRow>
+	</TableLayout>-->
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:id="@+id/selection" android:weightSum="1" android:padding="10dip"
+	android:background="#ffffff">
+	
+	<LinearLayout android:id="@+id/tabbar" android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:orientation="horizontal">
+	<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">			
+				<ImageButton  android:layout_width="wrap_content" 
+							  android:layout_height="wrap_content" 
+							  android:padding="3dip"
+							  android:background="@drawable/icon" 
+							  android:gravity="left" 
+							  android:layout_margin="10dp" 
+							  android:id="@+id/iconButton"/>
+	</LinearLayout>
+	
+	<RelativeLayout  android:layout_gravity="left|right" android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="right">
+					<ImageButton android:id="@+id/autobutton" android:layout_width="wrap_content" android:layout_marginRight="10dp" android:layout_marginTop="10dp" android:layout_height="wrap_content" android:background="@drawable/auto_off" android:clickable="true" android:focusable="true" ></ImageButton>
+					<ImageButton android:id="@+id/helpbutton" android:layout_width="wrap_content" android:layout_marginRight="10dp" android:layout_marginTop="10dp" android:layout_height="wrap_content" android:background="@drawable/help" android:layout_toRightOf="@+id/autobutton" android:clickable="true" android:focusable="true" ></ImageButton>
+					<ImageButton android:id="@+id/soundbutton" android:layout_width="wrap_content" android:layout_marginRight="10dp" android:layout_marginTop="10dp" android:layout_height="wrap_content" android:background="@drawable/audio_on" android:layout_toRightOf="@+id/helpbutton" android:clickable="true" android:focusable="true"></ImageButton>
+					<ImageButton android:id="@+id/homebutton" android:layout_width="wrap_content" android:layout_marginRight="10dp" android:layout_marginTop="10dp" android:layout_height="wrap_content" android:background="@drawable/home" android:layout_toRightOf="@+id/soundbutton" android:clickable="true" android:focusable="true"></ImageButton>
+				</RelativeLayout>
+				
+	</LinearLayout>
+	
+	<RelativeLayout android:layout_width="fill_parent" 
+				    android:layout_height="wrap_content" 
+				    android:gravity="center_horizontal" 
+				    android:id="@+id/gallery" 
+				    
+				    android:visibility="invisible">
+	<Gallery android:id="@+id/gallery1" 
+			 android:layout_width="fill_parent"
+	 		 android:layout_height="wrap_content" 
+	 		 android:gravity="left"/>
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="100dp" 
+					android:layout_height="wrap_content" 
+					android:layout_below="@+id/tabbar" 
+					android:layout_above="@+id/mixupbutton" 
+					android:id="@+id/viewflip1" 
+					android:layout_margin="10dp" 
+					android:gravity="center_vertical|center_horizontal">
+	<com.aptara.flashcard.MyViewFlipper android:id="@+id/cardFlipper1"
+				 android:layout_width="fill_parent"
+			     android:layout_height="115dp"></com.aptara.flashcard.MyViewFlipper>
+			     <ImageView android:id="@+id/backswipe"
+			     			android:layout_width="wrap_content" 
+  		            		android:layout_height="wrap_content" 
+  		            		android:src="@drawable/backswipe"
+  		            		android:layout_below="@+id/cardFlipper1" android:layout_margin="10dp" android:layout_centerHorizontal="true"/>
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="350dp" 
+					android:layout_height="wrap_content" 
+					android:layout_below="@+id/tabbar" 
+					android:layout_above="@+id/mixupbutton" 
+					android:gravity="center_horizontal" 
+					android:id="@+id/viewflip"
+					android:layout_toRightOf="@+id/viewflip1" 
+					>
+	<com.aptara.flashcard.MyViewFlipper android:id="@+id/cardFlipper"
+		 		 android:layout_height="fill_parent" 
+		 		 android:layout_width="fill_parent"></com.aptara.flashcard.MyViewFlipper>
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="350dp" 
+					android:layout_height="wrap_content" 
+					android:layout_below="@+id/tabbar" 
+					android:layout_above="@+id/mixupbutton" 
+					android:gravity="center_horizontal" 
+					android:id="@+id/animation"
+					android:layout_toRightOf="@+id/viewflip1" android:visibility="invisible">
+		<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    				 android:id="@+id/container"
+				     android:layout_width="350dp"
+				     android:layout_height="fill_parent" >
+
+		    <include
+        			android:id="@+id/notelist"
+        			layout="@layout/first_view" />
+		    <include
+        			android:id="@+id/notelist"
+        			layout="@layout/second_view" />
+
+		</FrameLayout>
+		</RelativeLayout>
+	<RelativeLayout android:layout_width="92dp" 
+					android:layout_height="wrap_content" 
+					android:layout_below="@+id/tabbar" 
+					android:layout_above="@+id/mixupbutton" 
+					android:id="@+id/viewflip3" 
+					android:layout_toRightOf="@+id/viewflip" 
+					android:layout_margin="10dp" 
+					android:gravity="center_vertical|center_horizontal">
+	<com.aptara.flashcard.MyViewFlipper android:id="@+id/cardFlipper3"
+		 		 android:layout_width="fill_parent"
+  		         android:layout_height="115dp"></com.aptara.flashcard.MyViewFlipper>
+  		         <ImageView android:id="@+id/nextswipe"
+  		         			android:layout_width="wrap_content" 
+  		            		android:layout_height="wrap_content" 
+  		            		android:src="@drawable/nextswipe"
+  		            		android:layout_below="@+id/cardFlipper3" android:layout_margin="10dp"/>
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="fill_parent" 
+					android:gravity="center_horizontal" 
+					android:layout_alignParentBottom="true" 
+					android:id="@+id/mixupbutton" android:layout_height="150dp"> 
+	<ImageButton android:id="@+id/button1"
+		   		 android:layout_width="wrap_content" 
+		   		 android:layout_height="wrap_content"
+		 		 android:text="Mix m up" 
+				 android:background="@drawable/mixup" 
+				 android:layout_gravity="center_vertical|center_horizontal">
+				 
+	</ImageButton>
+	</RelativeLayout>
+</RelativeLayout>

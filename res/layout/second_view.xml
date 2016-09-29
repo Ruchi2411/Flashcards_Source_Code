@@ -1,0 +1,12 @@
+<RelativeLayout android:id="@+id/Layout02"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<ImageView android:layout_centerHorizontal="true"
+	    	   android:layout_centerVertical="true" 
+	    	   android:layout_width="350dp"
+			   android:id="@+id/ImageView02" 
+			   android:layout_height="fill_parent"
+				android:src="@drawable/apple" android:padding="30dp">
+	</ImageView>
+	
+</RelativeLayout>

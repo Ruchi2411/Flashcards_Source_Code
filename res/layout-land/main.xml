@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:id="@+id/selection" android:weightSum="1" android:padding="10dip" android:background="#ffffff">
+	
+	<RelativeLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" 
+		android:layout_below="@+id/imagebg" 
+		android:layout_height="fill_parent">
+		<RelativeLayout android:layout_width="wrap_content" 
+					    android:layout_height="fill_parent" 
+					    android:layout_gravity="left"
+					    android:layout_alignParentLeft="true">
+		<ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+					 android:padding="10dp"
+			    	 android:background="@drawable/icon"
+			    	 android:id="@+id/iconButton" 
+			    	 android:layout_margin="10dp"/>
+		<ImageButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/card"
+			android:layout_gravity="center" android:id="@+id/flashcardbutton" android:layout_marginTop="75dip" android:layout_alignParentBottom="true">
+		</ImageButton>
+		</RelativeLayout>
+		<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_height="fill_parent" android:layout_below="@+id/table"
+			android:id="@+id/imagebg" android:gravity="center"
+			android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:src="@drawable/onthefarm_cover_hori" android:layout_width="fill_parent">
+		</ImageView>
+		<RelativeLayout  android:layout_gravity="left|right" android:gravity="center_vertical|bottom|right" android:layout_alignParentRight="true" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_width="fill_parent">
+					<ImageButton android:id="@+id/helpbutton" android:layout_width="wrap_content" android:layout_marginRight="10dp" android:layout_height="wrap_content" android:background="@drawable/help" android:clickable="true" android:focusable="true"></ImageButton>
+					<ImageButton android:id="@+id/soundbutton" android:layout_width="wrap_content" android:layout_marginRight="10dp" android:layout_height="wrap_content" android:background="@drawable/audio_on" android:layout_toRightOf="@+id/helpbutton" android:clickable="true" android:focusable="true"></ImageButton>
+				</RelativeLayout>
+		<ImageButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/gamebtn"
+			android:layout_gravity="center" android:id="@+id/gamebutton" android:layout_marginTop="75dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:focusable="true" android:clickable="true">
+		</ImageButton>
+	</RelativeLayout>
+
+</RelativeLayout>

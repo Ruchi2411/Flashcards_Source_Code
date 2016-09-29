@@ -1,0 +1,13 @@
+<RelativeLayout android:id="@+id/Layout01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<ImageView android:layout_centerHorizontal="true"
+			   android:layout_centerVertical="true" 
+			   android:layout_width="350dp"
+			   android:id="@+id/ImageView01" 
+			   android:layout_height="fill_parent"
+			   android:src="@drawable/a_card_big" android:padding="30dp">
+	</ImageView>
+</RelativeLayout>
+
+

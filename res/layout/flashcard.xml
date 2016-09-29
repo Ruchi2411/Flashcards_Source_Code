@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/flashcard" android:layout_height="fill_parent"
+	android:layout_width="fill_parent" android:layout_weight="1"
+	
+	>
+
+<ImageView android:layout_height="fill_parent"
+		android:layout_gravity="fill_horizontal" android:layout_width="fill_parent"
+		android:textSize="24dip" android:background="#ffffff"
+		android:textColor="#666" android:padding="10dip" android:id="@+id/text"
+		android:gravity="center_vertical|center_horizontal" android:text="This is the question">
+		</ImageView> 
+	<LinearLayout 
+				android:orientation="vertical"
+				android:layout_height="fill_parent" 
+				android:layout_width="fill_parent"
+				android:id="@+id/answerView">
+		<ImageView android:id="@+id/questionText" 
+				   android:textSize="24dip"
+				   android:background="#ffffff" 
+				   android:textColor="#666"
+			       android:layout_width="350dp" 
+			       
+			       android:layout_height="wrap_content" 
+			       android:layout_weight="1"
+			       android:text="This is the Text" 
+			       android:gravity="center_vertical|center_horizontal" android:padding="30dp">
+			</ImageView>
+		<ImageView android:layout_weight="1" 
+				   android:layout_height="wrap_content"
+				    
+				   android:layout_width="350dp"
+				   android:id="@+id/answerText" 
+				   android:visibility="invisible"
+				   android:background="#ffffff" android:padding="30dp"></ImageView>
+	</LinearLayout>
+</FrameLayout>

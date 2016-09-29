@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:id="@+id/selection" 
+	
+	android:background="#ffffff">
+	
+<!-- 	<RelativeLayout android:layout_width="fill_parent" 
+					android:layout_height="wrap_content" 
+					android:gravity="center_horizontal" 
+					android:id="@+id/gallery" 
+					android:layout_alignParentBottom="true">
+	<Gallery android:id="@+id/gallery1" 
+			 android:layout_width="fill_parent"
+			 android:layout_height="wrap_content" />
+	</RelativeLayout>
+	<RelativeLayout android:orientation="horizontal"
+					android:layout_width="fill_parent" 
+					android:layout_height="fill_parent"
+					android:layout_above="@+id/gallery">
+	<RelativeLayout android:id="@+id/rel1"
+					android:layout_width="wrap_content" 
+				    android:layout_height="fill_parent" 
+				    android:layout_gravity="left"
+				    android:layout_alignParentLeft="true">
+					<ImageButton android:layout_width="wrap_content" 
+								 android:layout_height="wrap_content"
+							     android:padding="10dp"
+			       				 android:background="@drawable/icon" 
+			 			         android:id="@+id/iconButton"
+			       				 android:layout_margin="10dp"/></RelativeLayout>
+		<RelativeLayout android:orientation="vertical"
+			    	 	android:layout_width="wrap_content" 
+					    android:layout_height="fill_parent" 
+					    android:layout_centerInParent="true"
+					    >
+					    <ImageButton android:id="@+id/button1"
+						   		 android:layout_width="wrap_content" 
+						   		 android:layout_height="wrap_content"
+						   		 android:text="Mix m up" 
+								 android:background="@drawable/mixup" 
+								 android:layout_gravity="center_vertical|center_horizontal" 
+								 android:layout_centerHorizontal="true" android:layout_margin="10dp"/>
+					 	<ViewFlipper android:id="@+id/cardFlipper"
+					    		  android:layout_weight="1"
+			  					  android:layout_below="@+id/button1" 
+			  					  android:layout_height="wrap_content" 
+			  					  android:layout_width="wrap_content"></ViewFlipper>
+		</RelativeLayout>
+		</RelativeLayout>
+			    	 <RelativeLayout  android:layout_gravity="left|right" android:gravity="center_vertical|right" android:layout_width="wrap_content" android:layout_alignParentRight="true" android:layout_height="wrap_content" android:layout_margin="10dp">
+					<ImageButton android:id="@+id/helpbutton"  android:layout_toRightOf="@+id/button1" android:layout_width="wrap_content" android:layout_marginRight="10dp" android:layout_marginTop="10dp" android:layout_height="wrap_content" android:background="@drawable/help" android:clickable="true" android:focusable="true" ></ImageButton>
+					<ImageButton android:id="@+id/soundbutton" android:layout_width="wrap_content" android:layout_marginRight="10dp" android:layout_marginTop="10dp" android:layout_height="wrap_content" android:background="@drawable/audio_on" android:layout_toRightOf="@+id/helpbutton" android:clickable="true" android:focusable="true"></ImageButton>
+					<ImageButton android:id="@+id/homebutton" android:layout_width="wrap_content" android:layout_marginRight="10dp" android:layout_marginTop="10dp" android:layout_height="wrap_content" android:background="@drawable/home" android:layout_toRightOf="@+id/soundbutton" android:clickable="true" android:focusable="true"></ImageButton>
+				</RelativeLayout>-->
+<RelativeLayout android:layout_width="fill_parent" 
+					android:layout_height="wrap_content" 
+					android:id="@+id/header" 
+					>
+					<RelativeLayout android:id="@+id/rel1"
+					android:layout_width="wrap_content" 
+				    android:layout_gravity="left"
+				    android:layout_alignParentLeft="true" android:layout_height="wrap_content">
+					<ImageButton android:layout_width="wrap_content" 
+								 android:layout_height="wrap_content"
+							     android:padding="10dp"
+			       				 android:background="@drawable/icon" 
+			 			         android:id="@+id/iconButton"
+			       				 android:layout_margin="10dp"/></RelativeLayout>
+					<RelativeLayout  android:layout_gravity="left|right" android:gravity="right" android:layout_alignParentRight="true" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_width="match_parent">
+					<ImageButton android:id="@+id/autobutton" android:layout_width="wrap_content" android:layout_marginRight="10dp" android:layout_marginTop="10dp" android:layout_height="wrap_content" android:background="@drawable/auto_off" android:clickable="true" android:focusable="true" ></ImageButton>
+					<ImageButton android:id="@+id/helpbutton" android:layout_width="wrap_content" android:layout_marginRight="10dp" android:layout_marginTop="10dp" android:layout_height="wrap_content" android:background="@drawable/help" android:layout_toRightOf="@+id/autobutton" android:clickable="true" android:focusable="true" ></ImageButton>
+					<ImageButton android:id="@+id/soundbutton" android:layout_width="wrap_content" android:layout_marginRight="10dp" android:layout_marginTop="10dp" android:layout_height="wrap_content" android:background="@drawable/audio_on" android:layout_toRightOf="@+id/helpbutton" android:clickable="true" android:focusable="true"></ImageButton>
+					<ImageButton android:id="@+id/homebutton" android:layout_width="wrap_content" android:layout_marginRight="10dp" android:layout_marginTop="10dp" android:layout_height="wrap_content" android:background="@drawable/home" android:layout_toRightOf="@+id/soundbutton" android:clickable="true" android:focusable="true"></ImageButton>
+				</RelativeLayout>
+					</RelativeLayout>
+					<RelativeLayout android:layout_width="fill_parent" 
+					android:gravity="center_horizontal" 
+					android:id="@+id/gallery" 
+					android:layout_alignParentBottom="true" android:layout_height="70dp">
+						<ImageButton android:id="@+id/button1"
+						   		 android:layout_width="wrap_content" 
+						   		 android:layout_height="wrap_content"
+						   		 android:text="Mix m up" 
+								 android:background="@drawable/mixup" 
+								 android:layout_gravity="center_horizontal" 
+								 android:layout_centerHorizontal="true" 
+								 android:layout_margin="10dp"/>
+						<Gallery android:id="@+id/gallery1" 
+								 android:layout_width="fill_parent"
+								 android:layout_height="wrap_content" 
+								 android:visibility="invisible"/>
+					</RelativeLayout>
+					<RelativeLayout  
+						android:layout_width="fill_parent" 
+					    android:layout_below="@+id/header" 
+					    android:layout_above="@+id/gallery"
+					    android:gravity="center_vertical|center_horizontal" 
+					    android:layout_height="fill_parent">
+					 <ImageView android:id="@+id/backswipe"
+			     			android:layout_width="wrap_content" 
+  		            		android:layout_height="wrap_content" 
+  		            		android:src="@drawable/backswipe"
+  		            		android:layout_below="@+id/cardFlipper1" android:layout_margin="10dp" android:layout_centerVertical="true"/>   
+					<RelativeLayout android:layout_below="@+id/header" 
+									android:id="@+id/viewflip1" 
+									android:layout_width="160dp" 
+									android:layout_height="fill_parent" 
+									android:layout_margin="10dp" 
+									android:layout_toRightOf="@+id/backswipe" android:gravity="center_vertical|center_horizontal">
+						<com.aptara.flashcard.MyViewFlipper android:id="@+id/cardFlipper1"
+							 		 android:layout_height="150dp" 
+							 		 android:layout_width="135dp" 
+							 		 android:layout_centerHorizontal="true"></com.aptara.flashcard.MyViewFlipper>
+					</RelativeLayout>
+					<RelativeLayout android:layout_below="@+id/header" 
+									android:id="@+id/viewflip" 
+									android:layout_toRightOf="@+id/viewflip1" 
+									android:layout_width="350dp" 
+									android:layout_height="fill_parent" 
+									android:layout_margin="10dp" >
+					    	    
+					 	<com.aptara.flashcard.MyViewFlipper android:id="@+id/cardFlipper"
+					    		  android:layout_width="350dp" 
+					    		  android:layout_height="fill_parent"></com.aptara.flashcard.MyViewFlipper>
+						</RelativeLayout>	
+						<RelativeLayout android:id="@+id/animation"
+										android:layout_width="350dp" 
+										android:layout_height="fill_parent" 
+										android:layout_below="@+id/header" 
+										
+										android:layout_toRightOf="@+id/viewflip1" 
+										android:visibility="invisible" 
+										android:layout_margin="10dp" 
+										android:gravity="center_vertical|center_horizontal" 
+										>
+							<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					    				 android:id="@+id/container"
+									     android:layout_width="350dp"
+									     android:layout_centerVertical="true" 
+									     android:layout_height="fill_parent" 
+									     >
+					
+							    <include
+					        			android:id="@+id/notelist"
+					        			
+					        			layout="@layout/first_view" />
+							    <include
+					        			android:id="@+id/notelist"
+					        			layout="@layout/second_view" />
+					
+							</FrameLayout>
+		</RelativeLayout>
+						<RelativeLayout android:layout_below="@+id/header" 
+									android:id="@+id/viewflip3" 
+									android:layout_toRightOf="@+id/viewflip" 
+									
+									android:layout_width="160dp" 
+									android:layout_height="fill_parent" android:layout_margin="10dp" android:gravity="center_vertical|center_horizontal">
+						<com.aptara.flashcard.MyViewFlipper android:id="@+id/cardFlipper3"
+							 		 android:layout_height="150dp" 
+							 		 android:layout_width="135dp"></com.aptara.flashcard.MyViewFlipper>
+					</RelativeLayout>
+					 <ImageView android:id="@+id/nextswipe"
+			     			android:layout_width="wrap_content" 
+  		            		android:layout_height="wrap_content" 
+  		            		android:src="@drawable/nextswipe"
+  		            		android:layout_toRightOf="@+id/viewflip3"
+  		            		android:layout_margin="10dp" android:layout_centerVertical="true"/>			
+					</RelativeLayout> 
+</RelativeLayout> 
